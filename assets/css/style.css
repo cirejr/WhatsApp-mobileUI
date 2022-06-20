@@ -1,0 +1,267 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.first {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*		left-box		*/
+
+.left {
+    background-color: #121b22;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.phone-box {
+    display: block;
+    width: 43%;
+    height: 600px;
+    border-radius: 22px;
+    background: #121b22;
+    box-shadow: 19px 19px 41px #0b1015, -19px -19px 41px #19262f;
+}
+
+.phone-box .icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50%;
+    left: 24%;
+    font-size: 50px;
+    color: #fff;
+}
+
+.phone-box footer {
+    position: relative;
+    bottom: -88%;
+    left: 4%;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 17px;
+    line-height: 0.5;
+}
+
+footer p:nth-child(1) {
+    color: rgba(255, 255, 255, 0.301);
+}
+
+.phone-box span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-box span img {
+    margin-right: 5px;
+}
+
+/*		right-box		*/
+
+.right {
+    background-color: #e6e6e6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right .phone-box {
+    display: block;
+    width: 43%;
+    height: 600px;
+    border-radius: 22px;
+    background: #e6e6e6;
+    box-shadow: 16px 16px 29px #b8b8b8, -16px -16px 29px #ffffff;
+}
+
+header .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: "Poppins";
+    line-height: 0;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+header .head i {
+    font-size: 11px;
+}
+
+header .head .header-ico i:nth-child(2) {
+    margin-left: 10px;
+}
+
+header {
+    height: 150px;
+    background-color: #177767;
+    border-radius: 22px 22px 0 0;
+}
+
+header .status {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4px 0;
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+header .status .status-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .status i {
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 12.5px 14px;
+    color: #fff;
+    background-color: #b8b8b875;
+}
+
+header .status img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header .status p {
+    line-height: 0;
+    color: #fff;
+}
+
+main {
+    height: 460px;
+    width: 100%;
+    background-color: #e6e6e6;
+    border-radius: 30px 30px 13px 13px;
+    position: relative;
+    bottom: 25px;
+}
+
+/*		chat-section		*/
+
+.chat-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.chat-section img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.chat-section .chat {
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    padding: 20px 20px 0;
+}
+
+.chat--left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.texts h5,
+.texts p {
+    line-height: 0;
+}
+
+.texts h5 {
+    margin: 0;
+}
+
+.chat--right p {
+    line-height: 0;
+    margin: 0;
+}
+
+.chat--right {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+
+.chat--right span {
+    line-height: 0;
+    margin: 14px 0;
+    background-color: #6db977;
+    width: 13px;
+    height: 15px;
+    border-radius: 50%;
+    color: #fff;
+    margin-top: 8px;
+    margin-left: 2px;
+}
+
+.chat--right i {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 2px;
+    color: #6db977;
+}
+
+.texts p {
+    margin: 14px 0;
+}
+
+.texts {
+    margin-left: 10px;
+}
+
+.chat-section p {
+    font-size: 10px;
+}
+
+.active {
+    color: #6db977;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/*============= Bottom Tab ==============*/
+
+.bottom-tab {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    width: 50%;
+    padding: 0 5px;
+    background-color: #0e6132;
+    border-radius: 30px;
+    position: relative;
+    bottom: 10%;
+    left: 25%;
+    color: #e6e6e6;
+    font-size: 13px;
+    z-index: 2;
+}
